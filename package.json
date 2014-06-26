@@ -1,7 +1,7 @@
 {
-  "name": "node-js-sample",
+  "name": "dc-bitstarter",
   "version": "0.1.0",
-  "description": "A sample Node.js app using Express 4",
+  "description": "Donal's first Node.js app using Express 4",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
@@ -14,16 +14,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/heroku/node-js-sample"
+    "url": "https://github.com/donalstar/bitstarter"
   },
   "keywords": [
     "node",
-    "heroku",
+    "donalstar",
     "express"
   ],
-  "author": "Mark Pundsack",
-  "contributors": [
-    "Zeke Sikelianos <zeke@sikelianos.com> (http://zeke.sikelianos.com)"
-  ],
+  "author": "Donal Carroll",
   "license": "MIT"
 }
