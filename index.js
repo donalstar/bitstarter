@@ -4,10 +4,12 @@ var app = express();
 app.set('port', (process.env.PORT || 8080))
 app.use(express.static(__dirname + '/public'))
 
-
-var buffer = new Buffer(2000);
-
 var fs = require('fs');
+
+var stats = fs.statSync("index.html")
+var fileSizeInBytes = stats["size"]
+
+var buffer = new Buffer(fileSizeInBytes);
 
 fs.readFile('index.html', function (err, data) {
   if (err) throw err;
