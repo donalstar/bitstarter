@@ -310,6 +310,48 @@ line-height: 1.5;
                     </ul>
                 </div>
                 <!--/.nav-collapse -->
+
+
+
+                <ul class="nav pull-right logged-in">
+                    <li class="dropdown user-item">
+                        <a class="dropdown-toggle" href="javascript:void(0)">
+                            <div class="mini-media-box media-photo media-round user-profile-image"></div>
+                            <span class="hide-phone value_name">User</span> <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu dropdown-bordered header-dropdown">
+                            <li><a href="/home/dashboard">Dashboard</a></li>
+                            <li class="listings">
+                                <a href="/rooms">
+                                    <span class="singular" style="display: none;">Your Listing</span>
+                                    <span class="plural">Your Listings</span>
+                                </a>
+                            </li>
+                            <li class="reservations" style="display: none;">
+                                <a href="/my_listings">Your Reservations</a>
+                            </li>
+                            <li><a href="/trips/upcoming">Your Trips</a></li>
+                            <li><a href="/wishlists/my" id="wishlists">Wish Lists</a></li>
+                            <li class="groups">
+                                <a href="/groups">Groups</a>
+                            </li>
+                            <li>
+                                <a href="/invite?r=3">
+                                    Invite Friends
+                                    <span class="label label-pink label-new">New</span>
+                                </a>
+                            </li>
+                            <li><a href="/users/edit">Edit Profile</a></li>
+                            <li><a href="/account">Account</a></li>
+                            <li><a href="/logout" id="header-logout">Log Out</a></li>
+                        </ul>
+                    </li>
+                    <li class="divider-vertical"></li>
+                    <li id="inbox-item">
+                        <a href="/inbox"><i class="icon icon-envelope"><span class="text-hide">Inbox</span></i><i class="alert-count position-super fade">0</i></a>
+                    </li>
+                    <li class="divider-vertical"></li>
+                </ul>
             </div>
             <!-- /.navbar-inner -->
         </div>
