@@ -1,4 +1,7 @@
-(function(){AIR.HomepageHelper={curr:0,intervalId:0,numSlides:0,animating:false,time_slideInterval:7000,time_slideTransition:800,time_captionFadeIn:1000,time_captionFadeOut:300,time_searchBarSlide:900,initHomepageHero:function(){this.initEvents();
+(function(){
+
+
+AIR.HomepageHelper={curr:0,intervalId:0,numSlides:0,animating:false,time_slideInterval:7000,time_slideTransition:800,time_captionFadeIn:1000,time_captionFadeOut:300,time_searchBarSlide:900,initHomepageHero:function(){this.initEvents();
 this.cacheEls();
 this.showSearch();
 this.initCalendars();

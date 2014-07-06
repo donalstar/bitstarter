@@ -4744,7 +4744,12 @@ if(b.is(e)){return f.apply(b,arguments)
 }})
 }})
 })(jQuery);
-!function(b,c){var a=b.fakeQuery=b.fakeQuery||{};
+!function(b,c){
+
+console.log("date pick");
+
+var a=b.fakeQuery=b.fakeQuery||{};
+}
 a.ui=a.ui||{};
 a.ui.templates={};
 c.datepicker={regional:{},setDefaults:function(){},}
