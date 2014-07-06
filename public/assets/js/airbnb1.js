@@ -75,7 +75,11 @@ d=I18n.guestConvertFromUsd(g,{format:true});
 return c.html(d)
 })
 }},clickInput:function(a){return $(a.currentTarget).prev("input[type='text']").focus()
-},initCalendars:function(){var b,c,a,g,d;
+},
+
+initCalendars:function(){
+console.log("init cals");
+var b,c,a,g,d;
 a=$.datepicker._defaults.dateFormat;
 b=$("#checkin");
 c=$("#checkout");
@@ -90,7 +94,9 @@ c.val(g).blur()
 this.els.searchArea.find("input[type='text']").placeholder();
 return this.els.blob.children("img").imagesLoaded().done(function(b){return a.els.blob.fadeIn(1000)
 })
-},initSlideshow:function(){var b,a=this;
+},
+
+initSlideshow:function(){var b,a=this;
 this.numSlides=this.els.slides.length;
 this.startingSlides=true;
 this.els.slides.find("img[data-image-url]").each(function(d,e){var c;
