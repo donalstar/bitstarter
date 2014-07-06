@@ -8,7 +8,11 @@ this.initCalendars();
 this.initPrice();
 this.initCustomForms();
 return $("#home-loading-indicator").hide()
-},initEvents:function(){var a=this;
+},
+
+initEvents:function(){
+console.log("init events");
+var a=this;
 $(".input-wrapper span").live("click",function(b){return a.clickInput(b)
 });
 $(".search-option").live("focus",function(b){return a.play()
@@ -19,7 +23,9 @@ $("#search_form").live("submit",function(b){return a.checkInputsAndSubmit(b)
 });
 return $(".slideshow-scroll").live("click",function(b){return a.clickSlideArrow(b)
 })
-},cacheEls:function(){this.els={};
+},
+
+cacheEls:function(){this.els={};
 this.els.hero=$("#hero");
 this.els.arrows=$(".slideshow-scroll");
 this.els.loc=$("#location");
@@ -29,7 +35,9 @@ this.els.searchArea=$(".search-area");
 this.els.blob=$("#blob-bg");
 this.els.form=$("#search_form");
 return this.els.video=$("#pretzel-video")
-},initCustomForms:function(){var a,c,b;
+},
+
+initCustomForms:function(){var a,c,b;
 a=this.els.form.find("#guests");
 c=a.parent().find(".current");
 b=function(d){return c.text(a.find(":selected").text())
